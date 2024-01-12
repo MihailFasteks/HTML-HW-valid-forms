@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="color"></div>
+        <div>
+            <form method="get">
+                <p>
+                    <label for="name">Имя</label>
+                    <input type="text" pattern="[A-Za-z]" id="name" name="name" placeholder="Вольдемар">
+                </p>
+                <p>
+                    <label for="sex">Пол</label><br>
+                    Мужской<input type="radio" name="sex" id="sex">
+                    Женский <input type="radio" name="sex" id="sex">
+                </p>
+                <p>
+                    <label for="email">Имя</label>
+                    <input type="email"  id="email" name="email" placeholder="voldemar@gmail.com" pattern="^[A-Za-z0-9]+@[A-Za-z]+[.][A-Za-z]{1,3}$">
+                </p>
+                <p>
+                    <label for="country">Страна</label>
+                    <select name="country" id="country">
+                        <option value="opt1">Украина</option>
+                        <option value="opt2">Германия</option>
+                        <option value="opt3">Колумбия</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="submit" value="Отправить">
+                </p>
+            </form>
+        </div>
+    </div>
+    <div class="green">
+<form method="get">
+    <h1>Step 1: Your details</h1>
+    <div class="block">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" pattern="[A-Za-z]" id="name2" name="name2" placeholder="First and last name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email"  id="email" name="email" placeholder="voldemar@gmail.com" pattern="^[A-Za-z0-9]+@[A-Za-z]+[.][A-Za-z]{1,3}$">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" pattern="^\+38-\(\d{3}\)-\d{3}-\d{2}-\d{2}$" placeholder="+38-(063)-055-67-23">
+        </div>
+    </div>
+    <h1>Step 2: Delivery adress</h1>
+    <div class="block">
+        <div>
+            <label for="adress">Name</label>
+            <input type="text"  id="adress" name="adress" placeholder="Your adress">
+        </div>
+        <div>
+            <label for="postcode">Имя</label>
+            <input type="postcode"  id="postcode" name="postcode" placeholder="89035" pattern="^\d+$">
+        </div>
+        <div>
+            <label for="country2">Страна</label>
+                    <select name="country2" id="country2">
+                        <option value="opt1">Украина</option>
+                        <option value="opt2">Германия</option>
+                        <option value="opt3">Колумбия</option>
+                    </select>
+        </div>
+    </div>
+    <h1>Step 3: Card details</h1>
+    <div class="block">
+<div class="card">
+    <label for="card">Card type</label>
+   
+        VISA<input type="radio" name="card" id="card">
+    MASTERCARD <input type="radio" name="card" id="card">
+    AmEX <input type="radio" name="card" id="card">
+
+
+</div>
+<div>
+<label for="cardNum">Card number</label>
+<input type="number" name="cardNum" id="cardNum" pattern="^(\d{4}-){3}\d{4}$" placeholder="4444-4444-4444-4444">
+</div>
+<div>
+    <label for="security">Security code</label>
+<input type="number" name="security" id="security" pattern="^\d{3}$" placeholder="389">
+</div>
+<div>
+    <label for="cardname">Card name</label>
+<input type="text" name="cardname" id="cardname" pattern="[A-Za-z]" placeholder="Nataly">
+</div>
+    </div>
+    <div class="button">
+        <input type="submit" value="BUY IT!">
+    </div>
+    
+</form>
+    </div>
+</body>
+</html>
